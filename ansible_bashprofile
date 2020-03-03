@@ -1,0 +1,12 @@
+# .bash_profile
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+PATH=/opt/app/ansible/bin:$PATH
+PYTHONPATH=/opt/app/ansible/lib:
+MANPATH=/opt/app/ansible/docs/man:$MANPATH
+ANSIBLE_HOSTS=/home/projects/ansible/ansible_hosts
+export PATH PYTHONPATH MANPATH ANSIBLE_HOSTS
